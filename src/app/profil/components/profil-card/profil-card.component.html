@@ -1,0 +1,25 @@
+<article class="profil-card" *ngIf="user">
+    <div class="profil-card__row">
+        <div class="profil-card__label">Username : </div>
+        <div class="profil-card__Value">{{user.username}}</div>
+    </div>
+
+    <div class="profil-card__row">
+        <div class="profil-card__label">Email : </div>
+        <div class="profil-card__Value">{{user.email}}</div>
+    </div>
+
+    <div class="profil-card__row">
+        <div class="profil-card__label">Create At : </div>
+        <div class="profil-card__Value">{{user.createdAt | date:"dd/mm/yyyy"}}</div>
+    </div>
+
+    <div class="profil-card__row">
+        <div class="profil-card__label">Password : </div>
+        <div class="profil-card__Value">{{user.password | hidePassword:hidePassword}}
+            <button mat-flat-button (click)="toggleHidePassword()">{{hidePassword ? 'Show' : 'Hide'}}</button>
+        </div>
+    </div>
+
+    <button class="profil-card__logout" mat-flat-button color="primary" (click)="onLogout()">LOGOUT</button>
+</article>

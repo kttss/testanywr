@@ -1,0 +1,10 @@
+<div class="example-full-width">
+    <mat-form-field class="example-full-width"  appearance="outline" floatLabel="always">
+        <mat-label>{{label}}</mat-label>
+        <input matInput [formControl]="control" [type]="!hide && type==='password' ? 'text' : type">
+        <button mat-icon-button matSuffix type="button" (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide" *ngIf="type=='password'">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+        <mat-error *ngIf="control && control?.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+</div>

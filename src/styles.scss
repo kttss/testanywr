@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+
+&::after{
+    background: url('https://www.anywr-group.com/hubfs/chub_backup/Logo@3x%20(3).png');
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    content: '';
+    width: 170px;
+    height: 60px;
+    background-size: 170px 60px;
+}}
+
+.form-action{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 16px;
+    margin-top: 16px;
+}
+
+.alert-succes{
+    background-color: green;
+}
+
+.alert-error{
+    background-color: #d91515;
+}

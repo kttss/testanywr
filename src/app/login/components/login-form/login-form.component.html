@@ -1,0 +1,10 @@
+<form [formGroup]="form" (ngSubmit)="handleSubmit()">
+
+    <anywr-text-field label="Enter your name" [control]="f.username"></anywr-text-field>
+    <anywr-text-field label="Enter your password" [control]="f.password" type="password"></anywr-text-field>
+ 
+    <div class="form-action">
+        <button mat-flat-button color="primary" type="submit" [disabled]="requesting">Login</button>
+        <button mat-flat-button (click)="navigateToSignup()" type="button">I don't have account</button>
+    </div>
+</form>

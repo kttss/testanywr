@@ -1,0 +1,8 @@
+{
+    "/tokens": {
+      "target": "http://jwtbuilder.jamiekurtz.com",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel":"debug"
+    }
+  }
