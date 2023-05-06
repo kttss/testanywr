@@ -26,8 +26,13 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
+## test user
+ `username:  ` anywr <br />
+ `password:  ` Azerty@123
+
 ## Resources
 [Angular site officiel](https://angular.io/)
 [Angular Material](https://material.angular.io/)
 [JWT](https://jwt.io/)
 [MockAPI](https://github.com/mockapi-io/docs/wiki)
+
